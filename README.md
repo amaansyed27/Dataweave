@@ -160,6 +160,74 @@ Dataweave/
 ├── tsconfig.node.json
 └── .gitignore
 ```
+### **src/components**
+This folder contains the core React components used in the application:
+
+- **SchemaBuilder.tsx**:  
+Provides the main interface for creating and managing database schemas. Includes features like adding/removing entities, editing fields, and managing relationships. Integrates with the `DiagramView` for visual schema representation.
+
+- **DataManager.tsx**:  
+Handles data management for entities. Allows users to manually enter data, import JSON or CSV files, and view existing data in a table format.
+
+- **QueryExecutor.tsx**:  
+Provides an interface for executing SQL queries and natural language queries. Integrates with the Gemini API to convert natural language queries into SQL.
+
+- **NaturalLanguageQuery.tsx**:  
+A sub-component used for handling natural language queries. Allows users to ask questions in plain English and converts them into SQL using the Gemini API.
+
+- **Navbar.tsx**:  
+The top navigation bar for the application. Includes links to settings, export options, and other key actions.
+
+- **ExportOptions.tsx**:  
+Provides options for exporting the schema and data in SQL or JSON format. Includes features for copying to clipboard and downloading files.
+
+- **Settings.tsx**:  
+A modal for configuring application settings, such as the Gemini API key.
+
+- **DiagramView.tsx**:  
+A visual representation of the schema. Displays entities and their relationships in a drag-and-drop interface.
+
+- **QueryResultTable.tsx**:  
+Displays the results of executed SQL queries in a tabular format.
+
+- **FileUploader.tsx**:  
+A utility component for uploading files (e.g., JSON, CSV) to import data into the application.
+
+- **DataTable.tsx**:  
+A table component for manually entering and editing data for entities.
+
+### **src/hooks**
+This folder contains custom React hooks:
+
+- **useIsMobile.tsx**:  
+A custom hook to determine if the current viewport width is below the mobile breakpoint (768px). Useful for rendering mobile-specific UI components or layouts.
+
+- **useToast.ts**:  
+A custom hook for managing toast notifications. Provides methods to display, update, and dismiss toast messages. Includes a queue system to limit the number of active toasts.
+
+### **src/libs**
+This folder contains third-party integrations and utilities:
+
+- **utils.ts**:  
+A collection of utility functions for common operations like formatting strings, generating unique IDs, and more.
+
+### **src/pages**
+This folder contains the main pages of the application:
+
+- **Index.tsx**:  
+The main entry point for the application. Manages the overall layout and tabs for schema building, data management, and query execution. Includes example schema and data loading logic.
+
+- **NotFound.tsx**:  
+A 404 error page displayed when the user navigates to a non-existent route. Includes a button to return to the main application.
+
+### **src/utils**
+This folder contains utility functions and classes:
+
+- **schemaUtils.ts**:  
+Provides functions for managing schemas, such as creating entities, fields, and relationships. Also includes utilities for converting schemas to SQL or JSON.
+
+- **sqlUtils.ts**:  
+Contains the `SQLExecutor` class, which provides methods for executing SQL queries, importing data, and exporting data as SQL scripts.
 
 ## Summary
 
