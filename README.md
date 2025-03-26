@@ -231,4 +231,4 @@ Contains the `SQLExecutor` class, which provides methods for executing SQL queri
 
 ## Summary
 
-Dataweave is a powerful and intuitive database schema design tool that simplifies entity management, relationships, and data interactions. It integrates AI-powered SQL generation and supports various export formats, making it an essential tool for database architects and developers. Try it out at [dataweave.vercel.app](https://dataweave.vercel.app).
+Dataweave is a powerful and intuitive database schema design tool that simplifies entity management, relationships, and data interactions. It integrates AI-powered SQL generation and supports various export formats, making it an essential tool for database architects and developers. Try it out at [dataweave.vercel.app](https://dataweave-ai.vercel.app).
