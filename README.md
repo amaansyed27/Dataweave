@@ -1,6 +1,6 @@
 # Dataweave
 
-Visit the live application at [dataweave.vercel.app](https://dataweave-ai.vercel.app).
+Visit the live application at [dataweave-ai.vercel.app](https://dataweave-ai.vercel.app).
 
 Dataweave is a web-based tool designed to help developers and database architects visually design, manage, and interact with database schemas. It provides an intuitive interface for creating entities, defining relationships, and managing data, all while generating SQL scripts for easy integration into your projects.
 
